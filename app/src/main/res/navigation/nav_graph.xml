@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/recommendedFragment"
-        android:name="ipren.watchr.activities.fragments.RecommendedFragment"
+        android:name="ipren.watchr.activities.fragments.MovieDetails"
         android:label="fragment_recommended"
-        tools:layout="@layout/fragment_recommended" />
+        tools:layout="@layout/fragment_movie_details" />
     <fragment
         android:id="@+id/favoritesFragment"
         android:name="ipren.watchr.activities.fragments.FavoritesFragment"
@@ -32,13 +32,32 @@
         android:label="fragment_watched"
         tools:layout="@layout/fragment_watched" />
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="ipren.watchr.activities.fragments.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        android:id="@+id/loginFragment"
+        android:name="ipren.watchr.activities.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
     <fragment
-        android:id="@+id/browseFragment"
-        android:name="ipren.watchr.activities.fragments.HomeFragment"
-        android:label="fragment_browse"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/accountFragment"
+        android:name="ipren.watchr.activities.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="ipren.watchr.activities.fragments.AccountSettingsFragment"
+        android:label="fragment_account_settings"
+        tools:layout="@layout/account_settings_fragment" />
+
+    <action
+        android:id="@+id/action_global_account_settings"
+        app:destination="@id/accountSettingsFragment"
+        app:enterAnim="@animator/slide_down" />
+
+    <action
+            android:id="@+id/action_global_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@animator/slide_down" />
+    <action
+        android:id="@+id/action_global_accountFragment"
+        app:destination="@id/accountFragment"
+        app:enterAnim="@animator/slide_up" />
 </navigation>
