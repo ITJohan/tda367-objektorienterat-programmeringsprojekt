@@ -18,8 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import ipren.watchr.Helpers.Util;
 import ipren.watchr.R;
+import ipren.watchr.activities.Util.Util;
 import ipren.watchr.activities.fragments.MovieListFragmentDirections;
 import ipren.watchr.dataHolders.Movie;
 import ipren.watchr.viewModels.ListViewModel;
